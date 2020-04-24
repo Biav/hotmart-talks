@@ -1,0 +1,87 @@
+@import './../../style.scss';
+
+.footer {
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    background: var(--hotmart-secondary-dark);
+    color: var(--hotmart-primary-lighter);
+    padding: 2em 1em;
+
+    @media(min-width: $hotmart-screen-tablet){
+        justify-items: baseline;
+        grid-template-columns: 2fr 1fr 1fr;
+        padding: 4em 5em;
+    }
+
+    @media(min-width: $hotmart-screen-medium){
+        padding: 4em 12em;
+    }
+
+    @media(min-width: $hotmart-screen-larger){
+        padding: 4em 20em;
+    }
+
+    a {
+        color: var(--hotmart-primary-lighter);
+    }
+
+    .footer__contact-info {
+        font-style: italic;
+        text-align: center;
+
+        & > div:first-child {
+            font-weight: bold;
+        }
+
+        .contact-info__text {
+            color: var(--hotmart-secondary-light);
+
+        }
+    }
+
+    .footer__logo {
+        height: 42px;
+        width: 130px;
+        background-image: url('./../../assets/footer/hotmart-logo.png');
+        background-image: url(/static/media/hotmart-logo.7291f5c7.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .footer__social-icons {
+        .social-icons__items {
+            display: grid;
+            grid-template-columns: repeat(4, 40px);
+            width: 100%;
+            align-items: center;
+            grid-gap: 12px;
+            list-style: none;
+            padding: 0;
+            
+            .social-icons__item {
+                height: 40px;
+                width: 40px;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                &.social-icons__item--facebook {
+                    background-image: url('./../../assets/footer/icon-hotmart-facebook.svg');
+                }
+
+                &.social-icons__item--instagram {
+                    background-image: url('./../../assets/footer/icon-hotmart-instagram.svg');
+                }
+
+                &.social-icons__item--twitter {
+                    background-image: url('./../../assets/footer/icon-hotmart-twitter.svg');
+                }
+
+                &.social-icons__item--youtube {
+                    background-image: url('./../../assets/footer/icon-hotmart-youtube.svg');
+                }
+            }
+        }
+    }
+}
