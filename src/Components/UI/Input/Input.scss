@@ -1,0 +1,58 @@
+@import '../../../style.scss';
+
+.subscription__form-input {
+    height: 40px;
+    border: 1px solid var(--hotmart-secondary-dark);
+    text-indent: 10px;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--hotmart-primary-light);
+    }
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    margin-left: 0;
+    margin-right: 1.2em;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: -5px;
+        left: 0;
+        border: 2px solid var(--hotmart-secondary-darker);
+        border-radius: 3px;
+        background-color: var(--hotmart-primary-lighter);
+    }
+
+    &.checked {
+        &:after {
+            content: "";
+            display: block;
+            width: 5px;
+            height: 10px;
+            border: solid var(--hotmart-secondary-darker);
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: absolute;
+            top: -2px;
+            left: 6px;
+        }
+    }
+}
+
+.form-invalid {
+    color: var(--hotmart-primary-light);
+
+    .subscription__form-input {
+        border: 1px solid var(--hotmart-primary-light);
+    }
+}

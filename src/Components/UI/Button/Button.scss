@@ -1,0 +1,15 @@
+@import '../../../style.scss';
+
+button {
+    width: fit-content;
+    text-transform: uppercase;
+    padding: 1em 4em;
+    border-radius: 20px;
+    font-weight: bold;
+    color: var(--hotmart-primary-lighter);
+
+    &.button-sumit {
+        background: var(--hotmart-secondary-dark);
+        border-color: var(--hotmart-secondary-dark);
+    }
+}
