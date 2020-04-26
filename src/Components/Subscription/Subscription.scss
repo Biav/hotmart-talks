@@ -1,0 +1,109 @@
+@import '../../style.scss';
+
+.subscription {
+    background: var(--hotmart-secondary-lighter);
+    color: var(--hotmart-secondary-dark);
+    padding: 2em;
+
+    .subscription__container {
+        padding: 2em 0;
+
+        @media(min-width: $hotmart-screen-desktop) {
+            padding: 4em 0; 
+        }
+
+        .subscription__info {
+            display: grid;
+            grid-gap: 10px;
+            align-items: end;
+
+            @media(min-width: $hotmart-screen-desktop) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .subscription__title {
+                font-size: 2em;
+                font-style: italic;
+                font-weight: 900;
+                line-height: 1.1em;
+
+                @media(min-width: $hotmart-screen-tablet) {
+                    font-size: 3.8em;
+                    padding: 2px;
+                }
+
+                @media(min-width: $hotmart-screen-medium) {
+                    font-size: 4.2em;
+                }
+            }
+        }
+
+        .subscription__form {
+            display: grid;
+            grid-gap: 10px;
+            margin-top: 20px;
+
+            @media(min-width: $hotmart-screen-tablet) {
+                max-width: 90%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .subscription__form-group {
+                display: grid;
+                grid-gap: 20px;
+
+                @media(min-width: $hotmart-screen-tablet) {
+                    grid-template-columns: 1fr 1fr;
+                    margin-top: 3em;
+
+                    & > div:nth-child(3){
+                        grid-column: 1 / 3;
+                    }
+                }
+             
+                .subscription__form-control {
+                    display: grid;
+
+                    @media(min-width: $hotmart-screen-tablet){
+                        margin-top: 2em;
+                    }
+
+                    .form-control__input {
+                        height: 40px;
+                        border: 1px solid var(--hotmart-secondary-dark);
+                        text-indent: 10px;
+
+                        &:focus {
+                            outline: none;
+                            border: 1px solid var(--hotmart-primary-light);
+                        }
+                    }
+
+                    .form-control__message {
+                        color: var(--hotmart-primary-light);
+                    }
+                }
+
+            }
+
+            .form-control-checkbox {
+                margin-top: 1em;
+
+                @media(min-width: $hotmart-screen-tablet){
+                    margin-top: 2em;
+                }
+            }
+
+            .subscription__form-submit {
+                margin-top: 1em;
+                text-align: center;
+
+                @media(min-width: $hotmart-screen-tablet){
+                    margin-top: 2em;
+                }
+            }
+
+        }
+    }
+}
