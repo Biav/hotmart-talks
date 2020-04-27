@@ -1,4 +1,5 @@
 import React from 'react';
+import Article from '../UI/Article/Article';
 import Button from '../UI/Button/Button';
 import './Banner.scss';
 
@@ -27,18 +28,9 @@ const banner = () => (
 
          </div>
          <div className="banner__container-description">
-            <div className="container-description__info container article__info article__info-large">
-                <div className="container-description__title">
-                    Share knowledge, make friends, and have fun.
-                </div>
-                <div>
-                    Hotmart Talks es la oportunidad de participar en un Happy Hour y aprovechar 
-                    para conocer a personas que se dedican al emprendimiento, los productos digitales y el mercado de la innovación.
-                    Ideado y organizado por Hotmart, "Talks" tiene lugar en bares o sitios que amalgaman happy hour con aprendizaje
-                    y cuenta siempre con la presencia de invitados especiales, proporcionando una experiencia placentera para todos. 
-                    Es un momento dedicado a conversar, hacer amigos y crecer.
-                </div>
-            </div>
+            <Article title = "Share knowledge, make friends, and have fun."
+                     type  = "large"
+                     description = "Hotmart Talks es la oportunidad de participar en un Happy Hour y aprovechar para conocer a personas que se dedican al emprendimiento, los productos digitales y el mercado de la innovación. Ideado y organizado por Hotmart, 'Talks' tiene lugar en bares o sitios que amalgaman happy hour con aprendizaje y cuenta siempre con la presencia de invitados especiales, proporcionando una experiencia placentera para todos. Es un momento dedicado a conversar, hacer amigos y crecer."/>
          </div>
     </div>
 );

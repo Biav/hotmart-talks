@@ -65,17 +65,18 @@
 
     .banner__container-description {
         background: var(--hotmart-primary-light);
-        padding: 2em;
 
-        @media(min-width: $hotmart-screen-medium){
-            padding: 4em 0;
+        @media(min-width: $hotmart-screen-tablet){
+            padding: 3em;
         }
 
-        .container-description__title {
-            font-size: 2em;
+        .article__info {
+            & > div:first-child {
+                font-size: 2em;
 
-            @media(min-width: $hotmart-screen-tablet){
-                font-size: 3.5em;
+                @media(min-width: $hotmart-screen-tablet){
+                    font-size: 3.5em;
+                }
             }
         }
     }

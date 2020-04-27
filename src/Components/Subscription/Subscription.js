@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Article from '../UI/Article/Article';
 import Button from '../UI/Button/Button';
 import Input from '../UI/Input/Input';
 import './Subscription.scss';
@@ -132,16 +133,10 @@ class Subscription extends Component {
         return(
             <div className="subscription">
                 <div className="subscription__container container">
-                    <div className="article__info ">
-                        <div>
-                            ¡No te pierdas las novedades!
-                        </div>
-                        <div>
-                            Suscríbete a nuestra newsletter, habilita las 
-                            notificaciones y recibe el mejor contenido sobre
-                            emprendimiento y marketing digital.
-                        </div>
-                    </div>
+                    <Article title="¡No te pierdas las novedades!"
+                             description="Suscríbete a nuestra newsletter, habilita las 
+                             notificaciones y recibe el mejor contenido sobre
+                             emprendimiento y marketing digital."/>
                     <form className="subscription__form" onSubmit={this.subscriptionTalk}>
                         <div className="subscription__form-group">
                         {formElementsArray.map(formElement => (

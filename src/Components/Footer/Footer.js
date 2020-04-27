@@ -11,8 +11,7 @@ const footer = () => (
                 Envía un email a <a href="mailto:talks@hotmart.com">talks@hotmart.com</a>
             </div>
         </div>
-        <div className="footer__logo">
-        </div>
+        <div className="footer__logo"></div>
         <div className="footer__social-icons">
             <ul className="social-icons__items">
                 <a href="https://www.facebook.com/hotmartofficial/?brand_redir=152932231728040" target="_new">
