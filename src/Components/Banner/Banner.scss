@@ -1,0 +1,82 @@
+@import '../../style.scss';
+
+.banner__container {
+    color: var(--hotmart-primary-lighter);
+
+    .banner__container-info {
+        background: var(--hotmart-primary-light);
+        height: 100%;
+
+        .container-info__image{
+            background-image: linear-gradient(to bottom, rgba(238,78,52, 0.8), rgba(238,78,52, 1)), url(../../assets/banner/hotmart-banner-talks.jpg);
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+
+            .container-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 5em;
+                text-transform: uppercase;
+
+                .container-info__logo {
+                    height: 100px;
+                    width: 350px;
+                    background-image: url(../../assets/banner/hotmart-talks-logo.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    @media(min-width: $hotmart-screen-tablet){
+                        width: 500px;
+                    }
+                }
+
+                .container-info__local {
+                    width: 350px;
+                    
+                    @media(min-width: $hotmart-screen-tablet){
+                        padding-right: 25px;
+                    }
+                }
+
+                .container-info__date {
+                    font-weight: 900;
+                    font-size: 1em;
+                    padding: 1.2em 0 0.5em;
+
+                    @media(min-width: $hotmart-screen-tablet){
+                        font-size: 1.5em;
+                    }
+                }
+
+                .container-info__subscription {
+                    width: 80%;
+                    margin-top: 2em;
+
+                    @media(min-width: $hotmart-screen-tablet){
+                        margin-top: 3em;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner__container-description {
+        background: var(--hotmart-primary-light);
+        padding: 2em;
+
+        @media(min-width: $hotmart-screen-medium){
+            padding: 4em 0;
+        }
+
+        .container-description__title {
+            font-size: 2em;
+
+            @media(min-width: $hotmart-screen-tablet){
+                font-size: 3.5em;
+            }
+        }
+    }
+}
