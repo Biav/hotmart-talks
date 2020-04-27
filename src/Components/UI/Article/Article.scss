@@ -1,0 +1,38 @@
+@import '../../../style.scss';
+
+.article__info {
+    @media(min-width: $hotmart-screen-desktop) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &.large {
+            height: 300px;
+        }
+
+        & > div {
+            flex: 1;
+        }
+    }
+
+    & > div:first-child{
+        font-size: 2em;
+        font-style: italic;
+        font-weight: 900;
+        line-height: 1.1em;
+
+        @media(min-width: $hotmart-screen-tablet) {
+            font-size: 3.8em;
+            padding: 2px;
+        }
+
+        @media(min-width: $hotmart-screen-medium) {
+            font-size: 4.2em;
+        }
+    }
+
+    & > div:last-child {
+        align-self: flex-end;
+        margin-top: 1em;
+    }
+}
