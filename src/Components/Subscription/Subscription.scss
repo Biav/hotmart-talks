@@ -12,32 +12,6 @@
             padding: 4em 0; 
         }
 
-        .subscription__info {
-            display: grid;
-            grid-gap: 10px;
-            align-items: end;
-
-            @media(min-width: $hotmart-screen-desktop) {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .subscription__title {
-                font-size: 2em;
-                font-style: italic;
-                font-weight: 900;
-                line-height: 1.1em;
-
-                @media(min-width: $hotmart-screen-tablet) {
-                    font-size: 3.8em;
-                    padding: 2px;
-                }
-
-                @media(min-width: $hotmart-screen-medium) {
-                    font-size: 4.2em;
-                }
-            }
-        }
-
         .subscription__form {
             display: grid;
             grid-gap: 10px;

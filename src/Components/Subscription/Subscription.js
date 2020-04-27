@@ -132,11 +132,11 @@ class Subscription extends Component {
         return(
             <div className="subscription">
                 <div className="subscription__container container">
-                    <div className="subscription__info">
-                        <div className="subscription__title">
+                    <div className="article__info ">
+                        <div>
                             ¡No te pierdas las novedades!
                         </div>
-                        <div className="subscription__body">
+                        <div>
                             Suscríbete a nuestra newsletter, habilita las 
                             notificaciones y recibe el mejor contenido sobre
                             emprendimiento y marketing digital.
