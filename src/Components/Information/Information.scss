@@ -1,0 +1,17 @@
+@import '../../style.scss';
+
+.information-container {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(12,45,56, 0.8), rgb(12, 45, 56)), url(../../assets/information/hotmart-fire.jpg);
+    width: 100%;
+    height: auto;
+    color: var(--hotmart-primary-lighter);
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media(min-width: $hotmart-screen-desktop){
+        height: 500px;
+    }
+}
