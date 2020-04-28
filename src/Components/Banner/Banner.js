@@ -3,8 +3,16 @@ import Article from '../UI/Article/Article';
 import Button from '../UI/Button/Button';
 import './Banner.scss';
 
-const banner = () => (
-    <div className="banner__container">
+const banner = () => {
+
+    const bannerInfo = {
+        title: 'Share knowledge, make friends, and have fun.',
+        size: 'large',
+        type: 'article-column',
+        description: '<b>Hotmart Talks</b> es la oportunidad de participar en un Happy Hour y aprovechar para conocer a personas que se dedican al emprendimiento, los productos digitales y el mercado de la innovación.<br/><br/> Ideado y organizado por Hotmart, <b>"Talks"</b> tiene lugar en bares o sitios que amalgaman happy hour con aprendizaje y cuenta siempre con la presencia de invitados especiales, proporcionando una experiencia placentera para todos. Es un momento dedicado a conversar, hacer amigos y crecer.',
+    };
+
+    return <div className="banner__container">
          <div className="banner__container-info">
              <div className="container-info__image">
                  <div className="container-info">
@@ -28,11 +36,12 @@ const banner = () => (
 
          </div>
          <div className="banner__container-description">
-            <Article title = "Share knowledge, make friends, and have fun."
-                     type  = "large"
-                     description = "Hotmart Talks es la oportunidad de participar en un Happy Hour y aprovechar para conocer a personas que se dedican al emprendimiento, los productos digitales y el mercado de la innovación. Ideado y organizado por Hotmart, 'Talks' tiene lugar en bares o sitios que amalgaman happy hour con aprendizaje y cuenta siempre con la presencia de invitados especiales, proporcionando una experiencia placentera para todos. Es un momento dedicado a conversar, hacer amigos y crecer."/>
+            <Article title = {bannerInfo.title}
+                     size  = {bannerInfo.size}
+                     type  = {bannerInfo.type}
+                     description = {bannerInfo.description}/>
          </div>
     </div>
-);
+};
 
 export default banner;

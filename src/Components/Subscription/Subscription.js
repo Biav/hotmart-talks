@@ -123,6 +123,13 @@ class Subscription extends Component {
     render(){
         const formElementsArray = [];
 
+        const subscriptionInfo = {
+            title: '¡No te pierdas las novedades!',
+            type: 'article-column',
+            description: 'Suscríbete a nuestra newsletter, habilita las notificaciones y recibe el mejor contenido sobre emprendimiento y marketing digital.',
+    
+        };
+
         for (let key in this.state.subscription) {
             formElementsArray.push({
                 id: key,
@@ -133,10 +140,9 @@ class Subscription extends Component {
         return(
             <div className="subscription">
                 <div className="subscription__container container">
-                    <Article title="¡No te pierdas las novedades!"
-                             description="Suscríbete a nuestra newsletter, habilita las 
-                             notificaciones y recibe el mejor contenido sobre
-                             emprendimiento y marketing digital."/>
+                    <Article title = {subscriptionInfo.title}
+                             type  = {subscriptionInfo.type}
+                             description = {subscriptionInfo.description}/>
                     <form className="subscription__form" onSubmit={this.subscriptionTalk}>
                         <div className="subscription__form-group">
                         {formElementsArray.map(formElement => (
