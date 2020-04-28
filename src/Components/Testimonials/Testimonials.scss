@@ -1,0 +1,102 @@
+@import '../../style.scss';
+
+$gradient-color: linear-gradient(var(--hotmart-primary-lighter), var(--hotmart-primary-lighter)), 
+                 linear-gradient(to right, rgba(254, 154, 78, 0.9), var(--hotmart-primary-light));
+
+.testimonials-container {
+    .testimonials { 
+        @media(min-width: $hotmart-screen-tablet) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .testimonial-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1em;
+            flex: 1;
+
+            @media(min-width: $hotmart-screen-desktop) {
+                align-items: baseline;
+                padding: 4em 0 3em;
+            }
+
+            .testimonial-item__profile {
+                display: inline-block;
+                overflow: hidden;
+                width: 200px;
+                height: 200px;
+                border: 3px solid var(--hotmart-primary-lighter);
+                border-radius: 50%;
+                border: 7px solid transparent;
+                border-radius: 50%;
+                background-image: $gradient-color;
+                background-origin: border-box;
+                background-clip: content-box, border-box;
+
+                img {
+                    width: 100%;
+                    height: inherit;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+
+            .testimonial-item__name {
+                width: fit-content;
+                font-weight: 900;
+                font-style: italic;
+                font-size: 2em;
+                margin-top: .5em;
+                line-height: 1em;
+
+                @media(min-width: $hotmart-screen-desktop) {
+                    margin-top: 1.5em;
+                }
+
+                span {
+                    background-image: linear-gradient(transparent 32px, rgba(254, 154, 78, 0.9) 52%, var(--hotmart-primary-light));
+                }
+            }
+
+            .testimonial-item__role {
+                font-size: 14px;
+                font-weight: initial;
+                padding: .8em .3em;
+
+                div {
+                    font-weight: 900;
+                }
+            }
+
+            .testimonial-item__info {
+                @media(min-width: $hotmart-screen-desktop) {
+                    align-self: flex-start;
+                }
+
+                a {
+                    display: flex;
+                    align-items: flex-end;
+                    text-decoration: none;
+                    text-transform: lowercase;
+                    color: var(--hotmart-primary-light);
+                    
+                    .item-icon {
+                        background: url(../../assets/testimonials/ver-mas.png);
+                        width: 25px;
+                        height: 20px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonial-subscription {
+        position: relative;
+        text-align: center;
+        bottom: -15px;
+    }
+}
