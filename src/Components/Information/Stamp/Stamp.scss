@@ -51,14 +51,17 @@
             }
 
             .stamp-item__title {
-                width: 65%;
+                width: 50%;
                 text-align: center;
+
+                @media(min-width: $hotmart-screen-tablet) {
+                    width: 65%;
+                }
             }
     
             .stamp-item__image {
                 height: 70px;
                 width: 320px;
-                margin-left: .5em;
                 margin-top: .5em;
                 background-image: url(../../../assets/banner/hotmart-talks-logo.png);
                 background-size: contain;
@@ -80,7 +83,13 @@
             .stam-item__buy {
                 button {
                     margin-top: 2em;
-                    width: 200px;
+                    height: auto;
+                    width: auto;
+
+                    @media(min-width: $hotmart-screen-tablet) {
+                        width: 200px;
+                        height: 45px;
+                    }
                 }
             }
         }

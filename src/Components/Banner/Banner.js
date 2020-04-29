@@ -7,7 +7,7 @@ const banner = () => {
 
     const bannerInfo = {
         title: 'Share knowledge, make friends, and have fun.',
-        size: 'large',
+        size: 'medium',
         type: 'article-column',
         description: '<b>Hotmart Talks</b> es la oportunidad de participar en un Happy Hour y aprovechar para conocer a personas que se dedican al emprendimiento, los productos digitales y el mercado de la innovación.<br/><br/> Ideado y organizado por Hotmart, <b>"Talks"</b> tiene lugar en bares o sitios que amalgaman happy hour con aprendizaje y cuenta siempre con la presencia de invitados especiales, proporcionando una experiencia placentera para todos. Es un momento dedicado a conversar, hacer amigos y crecer.',
     };
@@ -20,10 +20,10 @@ const banner = () => {
                     <div className="container-info__local text-line text-spacing">
                         Madrid
                     </div>
-                    <div className="container-info__date">
+                    <div className="container-info__date text-bold">
                         Juves 30 de noviembre de 2017
                     </div>
-                    <div className="text-spacing">
+                    <div className="text-spacing text-regular">
                         Lammuca de Prado | 19:30H
                     </div>
                     <div className="container-info__subscription text-line text-spacing">

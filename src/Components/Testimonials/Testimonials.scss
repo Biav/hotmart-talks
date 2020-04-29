@@ -17,7 +17,7 @@ $gradient-color: linear-gradient(var(--hotmart-primary-lighter), var(--hotmart-p
             padding: 1em;
             flex: 1;
 
-            @media(min-width: $hotmart-screen-desktop) {
+            @media(min-width: $hotmart-screen-tablet) {
                 align-items: baseline;
                 padding: 4em 0 3em;
             }
@@ -49,21 +49,18 @@ $gradient-color: linear-gradient(var(--hotmart-primary-lighter), var(--hotmart-p
 
             .testimonial-item__name {
                 width: fit-content;
-                font-weight: 900;
-                font-style: italic;
                 font-size: 2em;
                 margin-top: .5em;
                 line-height: 1em;
 
                 @media(min-width: $hotmart-screen-desktop) {
-                    margin-top: 1.5em;
+                    margin-top: 1.2em;
                 }
                 
             }
 
             .testimonial-item__role {
-                font-size: 14px;
-                font-weight: initial;
+                font-size: 15px;
                 padding: .8em .3em;
 
                 div {

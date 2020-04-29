@@ -6,7 +6,7 @@ const testimonialItem = ({speaker}) => (
         <div className="testimonial-item__profile">
             <img src={require(`../../assets/testimonials/${speaker.profileImage}`)} alt={speaker.name}/>
         </div>
-        <div className="testimonial-item__name text-underline">
+        <div className="testimonial-item__name text-underline text-bold">
             <span>{speaker.name}</span>
         </div>
         <div className="testimonial-item__role">

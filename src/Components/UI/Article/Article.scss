@@ -11,6 +11,7 @@
 
             & > div:last-child {
                 align-self: flex-end;
+                padding-left: 10px;
             }
         }
 
@@ -26,8 +27,12 @@
             }
         }
 
-        &.large {
+        &.medium {
             height: 300px;
+        }
+
+        &.large {
+            height: 400px;
         }
 
         & > div {
@@ -36,9 +41,10 @@
     }
 
     & > div:first-child{
+        font-family: 'Nunito', sans-serif;
         font-size: 2em;
         font-style: italic;
-        font-weight: 900;
+        font-weight: 800;
         line-height: 1.1em;
 
         @media(min-width: $hotmart-screen-tablet) {

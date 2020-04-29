@@ -1,10 +1,19 @@
+@import '../../../variables.scss';
+
 button {
     width: fit-content;
+    height: 45px;
     text-transform: uppercase;
     padding: 1em 4em;
     border-radius: 20px;
-    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
     color: var(--hotmart-primary-lighter);
+
+    @media(min-width: $hotmart-screen-tablet){
+        height: 45px;
+    }
 
     &.button-sumit {
         background: var(--hotmart-secondary-dark);
