@@ -12,8 +12,6 @@
   <a href="#-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-<br>
-
 ## Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
