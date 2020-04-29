@@ -22,6 +22,11 @@ body {
   margin: 0em;
   font-family: 'Open Sans', sans-serif;
 
+  a:active, a:focus, button:focus {
+    outline: 0;
+    border: none;
+  }
+
   .container {
       width: auto;
       max-width: $hotmart-screen-desktop;
