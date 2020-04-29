@@ -139,7 +139,7 @@ class Subscription extends Component {
 
         return(
             <div className="subscription">
-                <div className="subscription__container container">
+                <div className="subscription__container container" id="subscription">
                     <Article title = {subscriptionInfo.title}
                              type  = {subscriptionInfo.type}
                              description = {subscriptionInfo.description}/>
