@@ -1,4 +1,4 @@
-@import '../../style.scss';
+@import '../../variables.scss';
 
 $gradient-color: linear-gradient(var(--hotmart-primary-lighter), var(--hotmart-primary-lighter)), 
                  linear-gradient(to right, rgba(254, 154, 78, 0.9), var(--hotmart-primary-light));
@@ -20,6 +20,10 @@ $gradient-color: linear-gradient(var(--hotmart-primary-lighter), var(--hotmart-p
             @media(min-width: $hotmart-screen-desktop) {
                 align-items: baseline;
                 padding: 4em 0 3em;
+            }
+
+            @media(min-width: $hotmart-screen-medium) {
+                padding: 4em;
             }
 
             .testimonial-item__profile {
@@ -54,10 +58,7 @@ $gradient-color: linear-gradient(var(--hotmart-primary-lighter), var(--hotmart-p
                 @media(min-width: $hotmart-screen-desktop) {
                     margin-top: 1.5em;
                 }
-
-                span {
-                    background-image: linear-gradient(transparent 32px, rgba(254, 154, 78, 0.9) 52%, var(--hotmart-primary-light));
-                }
+                
             }
 
             .testimonial-item__role {

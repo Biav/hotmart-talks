@@ -1,7 +1,7 @@
-@import '../../../style.scss';
+
+@import '../../../variables.scss';
 
 .article__info {
-    
     @media(min-width: $hotmart-screen-desktop) {
         display: flex;
         justify-content: space-between;

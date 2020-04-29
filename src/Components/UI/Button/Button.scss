@@ -1,5 +1,3 @@
-@import '../../../style.scss';
-
 button {
     width: fit-content;
     text-transform: uppercase;
@@ -11,5 +9,10 @@ button {
     &.button-sumit {
         background: var(--hotmart-secondary-dark);
         border-color: var(--hotmart-secondary-dark);
+    }
+
+    &.button-success {
+        background: #02e202;
+        border-color: var(--hotmart-primary-lighter);
     }
 }

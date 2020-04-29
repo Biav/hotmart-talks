@@ -1,4 +1,4 @@
-@import '../../style.scss';
+@import '../../variables.scss';
 
 .banner__container {
     color: var(--hotmart-primary-lighter);
@@ -67,7 +67,7 @@
         background: var(--hotmart-primary-light);
 
         @media(min-width: $hotmart-screen-tablet){
-            padding: 3em;
+            padding: 1.5em 2em 2em;
         }
 
         .article__info {
